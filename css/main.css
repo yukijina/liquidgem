@@ -1,0 +1,243 @@
+* {
+  margin: 0 15px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  color: #403e3e;
+}
+
+/* COMMON
+font-family: 'Cookie', cursive;
+pink: rgb(255, 120, 164);
+body color #403e3e
+*/
+
+/* COMMON PROPERTY */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*=================================
+[1] NAVIGATION
+[2] HEADER
+[3] SECTION - MAIN
+[4] SECTION - PHOTO
+[5] FOOTER
+=====================================*/
+
+
+
+/*==========[1] NAVIGATION =========*/
+nav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.logo {
+  display: inline-block;
+}
+.logo img {
+  display: inline-block;
+  height: 30px;
+  margin: 0;
+}
+.logo p {
+  display: inline-block;
+  font-family: 'Cookie', cursive;
+  font-size: 2.5rem;
+  margin-left: 3px;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+.nav-list {
+  float: right;
+  padding-top: 10px;
+}
+.nav-list li {
+  display: inline-block;
+  list-style: none;
+}
+.nav-list a {
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+.nav-list a:hover {
+  border-bottom: 2px solid #403e3e;
+  color: #8c8787;
+}
+
+/*===========[2] HEADER ============*/
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+header h1 span {
+  color: rgb(255, 120, 164);
+}
+
+.header-img {
+  display: inline-block;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-size: cover;
+}
+
+/*=======[3] SECTION - MAIN ========*/
+#main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+#main div {
+  width: 40%;
+}
+
+#main h2 {
+  font-family: 'Cookie', cursive;
+  color: rgb(255, 120, 164);
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#main p::first-letter {
+  font-size: 1.8rem;
+}
+
+/*======[4] SECTION - PHOTO ========*/
+#photo-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 1100px;
+}
+
+.photo-box {
+  width: 180px;
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+  background-size: contain;
+}
+
+.photo-box img{
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+  border-radius: 15px;
+}
+
+.photo-box h3 {
+  font-size: 1.1rem;
+}
+
+.photo-box p {
+  font-family: 'Cookie', cursive;
+  color: rgb(255, 120, 164);
+  font-size: 1.2rem;
+}
+
+#photo-wrapper p.thanks {
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  color: rgb(255, 120, 164);
+  font-size: 2.5rem;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*==========[5] FOOTER ===========*/
+footer {
+  background-color: #363333;
+  position: relative;
+  padding: 30px 0;
+}
+
+/* LEFT SIDE / CONTACT FORM */
+#contact label {
+  font-family: 'Cookie', cursive;
+  color: rgb(255, 120, 164);
+  font-size: 2em;
+}
+
+#contact  input {
+  display: block;
+}
+#contact input {
+  width: 300px;
+  height: 35px;
+  border: 2px solid #363333;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}
+#contact textarea {
+  font-size: 1.1rem;
+  padding-left: 5px;
+  color: #807f7f;
+  border: 1px solid #363333;
+  width: 450px;
+}
+#contact button {
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: none;
+}
+#contact button:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 10px rgba(255, 120, 164, 0.6);
+}
+#contact button:active {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 5px rgba(255, 120, 164, 0.6);
+}
+
+/* RIGHT SIDE - SOCIAL ICON */
+.social-icon {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+.social-icon a {
+  padding: 0;
+  margin: 0;
+}
+.social-icon a:hover {
+color: #8c8787;
+}
+.social-icon i {
+  background-color: rgb(255, 120, 164);
+  padding: 15px 15px;
+  border-radius: 50%;
+}
+.social-icon i.fa-facebook-f {
+  padding-left: 17.8px;
+  padding-right: 17.8px;
+}
+.social-icon i.fa-pinterest-p {
+  padding-left: 16.2px;
+  padding-right: 16.2px;
+}
+.social-icon i.fa-google-plus-g {
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+}
